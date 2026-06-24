@@ -15,7 +15,7 @@ Inspired by the beloved [jovial](https://github.com/zthxxx/jovial) theme — rai
 
 <br>
 
-<img src="docs/assets/demo-clean.svg" alt="Clean repository — two-line prompt with happy kaomoji" width="860">
+<img src="docs/assets/demo-clean.png" alt="Clean repository — two-line prompt with happy kaomoji" width="860">
 
 *Line 1: Starship status bar &nbsp;·&nbsp; Line 2: animated kaomoji pointer*
 
@@ -46,14 +46,14 @@ No Python. No JSON. No Node. Just zsh + sh + a plain-text face file.
 
 **Clean repo** — all is well
 
-<img src="docs/assets/demo-clean.svg" alt="Clean state demo" width="100%">
+<img src="docs/assets/demo-clean.png" alt="Clean state demo" width="100%">
 
 </td>
 <td width="50%">
 
 **Dirty repo** — something changed
 
-<img src="docs/assets/demo-dirty.svg" alt="Dirty state demo" width="100%">
+<img src="docs/assets/demo-dirty.png" alt="Dirty state demo" width="100%">
 
 </td>
 </tr>
@@ -62,14 +62,14 @@ No Python. No JSON. No Node. Just zsh + sh + a plain-text face file.
 <details>
 <summary><strong>All 14 git states at a glance</strong></summary>
 <br>
-<img src="docs/assets/demo-states.svg" alt="Gallery of git state kaomoji" width="100%">
+<img src="docs/assets/demo-states.png" alt="Gallery of git state kaomoji" width="100%">
 <br><br>
 <code>clean</code> · <code>dirty</code> · <code>staged</code> · <code>untracked</code> · <code>conflict</code> · <code>rebase</code> · <code>merge</code> · <code>ahead</code> · <code>behind</code> · <code>diverged</code> · <code>cherry</code> · <code>revert</code> · <code>bisect</code> · <code>nogit</code>
 </details>
 
 <br>
 
-<img src="docs/assets/demo-layout.svg" alt="Architecture — line 1 Starship, line 2 zsh kaomoji" width="100%">
+<img src="docs/assets/demo-layout.png" alt="Architecture — line 1 Starship, line 2 zsh kaomoji" width="100%">
 
 ---
 
@@ -234,13 +234,17 @@ export STARSHIP_KAOMOJI_INTERVAL=2.5
 
 ## Replacing preview images
 
-The images in `docs/assets/` are SVG mockups that look great on GitHub without binary files. To swap in real terminal screenshots:
+Preview images are **PNG** files in `docs/assets/` (generated from the `.svg` sources). GitHub renders PNG reliably; SVG previews often break due to sanitization and font issues.
 
-1. Record your prompt in Ghostty / iTerm2 (clean + dirty states work best)
-2. Save as `docs/assets/demo-clean.png` and `demo-dirty.png`
-3. Update the `<img src="...">` paths in this README
+To regenerate after editing the SVG sources:
 
-Tips: use a dark theme, disable window transparency, crop to the prompt area.
+```bash
+brew install librsvg   # once
+cd docs/assets
+for f in demo-*.svg; do rsvg-convert -w 1840 "$f" -o "${f%.svg}.png"; done
+```
+
+To use real terminal screenshots instead, save as `demo-clean.png` / `demo-dirty.png` and update paths in this README.
 
 ---
 

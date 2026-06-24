@@ -1,27 +1,31 @@
 # Assets
 
-Preview images for the README live here.
+Preview images for the README.
 
 | File | Description |
 |------|-------------|
-| `demo-clean.svg` | Clean repo — hero screenshot |
-| `demo-dirty.svg` | Dirty working tree |
-| `demo-states.svg` | Gallery of all git-state faces |
-| `demo-layout.svg` | Two-line architecture diagram |
+| `demo-clean.png` | Clean repo — hero screenshot (README) |
+| `demo-dirty.png` | Dirty working tree |
+| `demo-states.png` | Gallery of all git-state faces |
+| `demo-layout.png` | Two-line architecture diagram |
+| `demo-*.svg` | Source files used to generate PNGs |
 
-## Capture real screenshots (optional)
+## Why PNG, not SVG?
+
+GitHub sanitizes SVG in READMEs (strips styles, blocks scripts, fonts often missing). PNG displays consistently everywhere.
+
+## Regenerate PNG from SVG
 
 ```bash
-# macOS — select a region after running:
-screencapture -i ~/Desktop/prompt-clean.png
-
-# Or use your terminal's built-in export / screen recording
+brew install librsvg
+cd docs/assets
+for f in demo-*.svg; do rsvg-convert -w 1840 "$f" -o "${f%.svg}.png"; done
 ```
 
-Recommended states to capture:
+## Real terminal screenshots (optional)
 
-1. **clean** — happy kaomoji, `✔` in status bar
-2. **dirty** — `(ﾉ˚Д˚)ﾉ` on both lines
-3. **conflict** — table-flip energy
+```bash
+screencapture -i ~/Desktop/prompt-clean.png
+```
 
-Replace SVG paths in `README.md` with `.png` if you prefer photo-real previews.
+Replace `demo-clean.png` / `demo-dirty.png` for photo-real previews.
