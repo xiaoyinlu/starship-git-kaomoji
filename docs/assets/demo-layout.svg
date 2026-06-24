@@ -5,12 +5,12 @@
   <rect x="32" y="58" width="856" height="72" rx="10" fill="#11111b" stroke="#45475a"/>
   <text x="48" y="82" font-family="Menlo,monospace" fill="#f9e2af" font-size="12" font-weight="700">LINE 1</text>
   <text x="110" y="82" font-family="-apple-system,sans-serif" fill="#cdd6f4" font-size="14" font-weight="700">Starship rainbow powerline</text>
-  <text x="48" y="108" font-family="-apple-system,sans-serif" fill="#a6adc8" font-size="11">precmd + async refresh / custom.git_kaomoji shows health</text>
+  <text x="48" y="108" font-family="-apple-system,sans-serif" fill="#e8eaf0" font-size="11">precmd + async refresh / custom.git_kaomoji shows health</text>
   <text x="48" y="124" font-family="Menlo,monospace" fill="#fab387" font-size="12">╭─[user][path][branch][ health ][nodejs][time]</text>
   <rect x="32" y="152" width="856" height="72" rx="10" fill="#11111b" stroke="#45475a"/>
   <text x="48" y="176" font-family="Menlo,monospace" fill="#f9e2af" font-size="12" font-weight="700">LINE 2</text>
   <text x="110" y="176" font-family="-apple-system,sans-serif" fill="#cdd6f4" font-size="14" font-weight="700">zsh PROMPT + kaomoji animation</text>
-  <text x="48" y="202" font-family="-apple-system,sans-serif" fill="#a6adc8" font-size="11">PROMPT substitution / SIGUSR1 timer / in-process frame lookup</text>
+  <text x="48" y="202" font-family="-apple-system,sans-serif" fill="#e8eaf0" font-size="11">PROMPT substitution / SIGUSR1 timer / in-process frame lookup</text>
   <text x="48" y="218" font-family="Menlo,monospace" fill="#fab387" font-size="12">╰─(๑˃̵ᴗ˂̵)و ▍</text>
   <text x="48" y="258" font-family="-apple-system,sans-serif" fill="#89b4fa" font-size="11">kaomoji.faces  ->  git-kaomoji.sh  ->  kaomoji-prompt.zsh  ->  kaomoji-animate.zsh</text>
 </svg>

@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
   <rect width="920" height="520" rx="14" fill="#1a1a26"/>
   <text x="32" y="42" font-family="-apple-system,sans-serif" font-size="22" font-weight="700" fill="#cdd6f4">One repo, many moods</text>
-  <text x="32" y="66" font-family="-apple-system,sans-serif" font-size="13" fill="#a6adc8">14 git states - health, pointer and animation frames</text>
+  <text x="32" y="66" font-family="-apple-system,sans-serif" font-size="13" fill="#bac2de">14 git states - health, pointer and animation frames</text>
   
   <g transform="translate(32,88)">
     <rect fill="#181825" stroke="#313244" stroke-width="1" width="200" height="88" rx="10"/>
@@ -78,5 +78,5 @@
   </g>
   <rect x="32" y="420" width="856" height="72" rx="10" fill="#11111b" stroke="#45475a"/>
   <text x="52" y="448" font-family="-apple-system,sans-serif" font-size="13" fill="#cdd6f4">Edit kaomoji.faces - plain INI, no Python, any number of animation frames</text>
-  <text x="52" y="472" font-family="-apple-system,sans-serif" font-size="12" fill="#a6adc8">health: line 1 status bar / pointer: static line 2 / anim: idle animation</text>
+  <text x="52" y="472" font-family="-apple-system,sans-serif" font-size="12" fill="#e8eaf0">health: line 1 status bar / pointer: static line 2 / anim: idle animation</text>
 </svg>
