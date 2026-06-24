@@ -1,0 +1,19 @@
+# Merge into ~/.config/starship.toml
+# Prerequisite: export STARSHIP_KAOMOJI_HOME before starship init (init.zsh does this).
+
+# format: line 1 only — start with ╭─, no $character / input line
+
+[character]
+success_symbol = ""
+error_symbol = ""
+format = "$symbol"
+
+[git_status]
+disabled = true
+
+[custom.git_kaomoji]
+description = "git health kaomoji (status bar)"
+when = "git rev-parse --is-inside-work-tree >/dev/null 2>&1"
+style = "bg:#FCA17D fg:black bold"
+format = '[$output]($style)'
+command = "$STARSHIP_KAOMOJI_HOME/git-kaomoji.sh health"

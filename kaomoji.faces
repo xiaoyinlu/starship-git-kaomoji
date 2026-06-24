@@ -1,0 +1,77 @@
+# Kaomoji face data (POSIX sh, no Python).
+# Override: STARSHIP_KAOMOJI_FRAMES=/path/to/kaomoji.faces
+#
+# [state_name]
+# health  = status bar (line 1)
+# pointer = line 2 when animation is off
+# anim    = animation frames, separated by | (any count)
+
+[clean]
+health= ✔
+pointer=(๑˃̵ᴗ˂̵)و 
+anim=(๑˃̵ᴗ˂̵)و |(๑˃̵ᴗ˂̵)ゞ|(๑˃̵ᴗ˂̵)و 
+
+[dirty]
+health= (ﾉ˚Д˚)ﾉ
+pointer=(ﾉ˚Д˚)ﾉ 
+anim=(ﾉ˚Д˚)ﾉ |(╯ﾉ˚Д˚)ﾉ|(ﾉ˚Д˚)ﾉﾞ
+
+[staged]
+health= (•̀ᴗ•́)و
+pointer=(•̀ᴗ•́)و 
+anim=(•̀ᴗ•́)و |(•̀▽•́)و |(•̀ᴗ•́)و 
+
+[untracked]
+health= (・_・)?
+pointer=(・_・)? 
+anim=(・_・)? |(・_・)ノ|(・_・)?
+
+[conflict]
+health= (╯°□°)╯
+pointer=(╯°□°)╯ 
+anim=(╯°□°)╯ |┻━┻ (╯°□°)╯|(╯°□°)╯ 
+
+[rebase]
+health= (；´д｀)ゞ
+pointer=(；´д｀)ゞ 
+anim=(；´д｀)ゞ |(；゜д゜)ゞ|(；´д｀)ゞ 
+
+[merge]
+health= (ಠ益ಠ)
+pointer=(ಠ益ಠ) 
+anim=(ಠ益ಠ) |(ಠ_ಠ) |(ಠ益ಠ) 
+
+[ahead]
+health= (ง•̀_•́)ง
+pointer=(ง •̀_•́)ง 
+anim=(ง •̀_•́)ง |(ᕦಠ益ಠ)ᕤ |(ง •̀_•́)ง︎
+
+[behind]
+health= (´；ω；`)
+pointer=(´；ω；`) 
+anim=(´；ω；`) |(´；д；`) |(´；ω；`) 
+
+[diverged]
+health= (⊙_⊙)？
+pointer=(⊙_⊙)？ 
+anim=(⊙_⊙)？ |(°o°)？ |(・_・;)？ 
+
+[cherry]
+health= (๑•̀ㅂ•́)و
+pointer=(๑•̀ㅂ•́)و 
+anim=(๑•̀ㅂ•́)و |(๑•̀ㅂ•́)و✧|(๑•̀ω•́)و |(๑•̀ㅂ•́)و 
+
+[revert]
+health= (↩•̀_•́)
+pointer=(↩•̀_•́) 
+anim=(↩•̀_•́) |(↩•̀ᴗ•́) |(↩•́_•̀) |(↩•̀_•́) 
+
+[bisect]
+health= (•̀ᴗ•́)ゞ
+pointer=(•̀ᴗ•́)ゞ
+anim=(•̀ᴗ•́)ゞ|(•̀▽•́)ゞ|(•̀ω•́)ゞ|(•̀ᴗ•́)ゞ
+
+[nogit]
+health=
+pointer=─➤ 
+anim=─▶ |──▶|─▶ |──▶ 
